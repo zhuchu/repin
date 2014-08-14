@@ -1,7 +1,8 @@
 <div class="jumbotron center">
 <h1>Chu is here.</h1>
 <% if user_signed_in? %>
-<p>You are already signed in.</p>
+<p>You are signed in.</p>
+<p> <%= link_to "Start Pining", new_pin_path, class: "btn btn-primary btn-lg" %> </p>
      <% else %>
        <p>
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
